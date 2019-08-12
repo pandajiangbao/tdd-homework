@@ -62,6 +62,7 @@ public class Poker {
         player2 = player2.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
         Integer style1 = judgeStyle(player1);
         Integer style2 = judgeStyle(player2);
+        player1.forEach(System.out::println);
         player2.forEach(System.out::println);
         System.out.println("style1 = " + style1);
         System.out.println("style2 = " + style2);

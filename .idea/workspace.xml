@@ -183,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE">
+  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE">
     <configuration name="PokerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -231,6 +231,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poker" />
+      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -247,29 +263,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="poker" />
-      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
         <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" />
         <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" />
         <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" />
         <item itemvalue="JUnit.PokerTest" />
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" />
       </list>
     </recent_temporary>
   </component>
