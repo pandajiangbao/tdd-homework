@@ -8,7 +8,8 @@ import java.util.stream.Collectors;
 
 public class Poker {
     private String type;
-    private String number;
+    private Integer number;
+
     public String getType() {
         return type;
     }
@@ -17,41 +18,110 @@ public class Poker {
         this.type = type;
     }
 
-    public String getNumber() {
+    public Integer getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
     public Poker(String type, String number) {
         this.type = type;
-        this.number = number;
-    }
-
-    private static List<String> sizeList= Arrays.asList("2","3","4","5","6","7","8","9","T","J","Q","K","A");
-
-    public static String compareCards(List<Poker> player1,List<Poker> player2){
-        List<Integer> cardList1 = player1.stream()
-                .map(item -> sizeList.indexOf(item.getNumber()))
-                .collect(Collectors.toList());
-        List<Integer> cardList2 = player2.stream()
-                .map(item -> sizeList.indexOf(item.getNumber()))
-                .collect(Collectors.toList());
-        return compareCardsNumber(cardList1,cardList2);
-    }
-    public static String compareCardsNumber(List<Integer> cardList1,List<Integer> cardList2){
-        Integer max1=cardList1.stream().max(Comparator.comparing(Integer::valueOf)).get();
-        Integer max2=cardList2.stream().max(Comparator.comparing(Integer::valueOf)).get();
-        if (max1>max2){
-          return  "player1 win";
+        switch (number) {
+            case "T":
+                this.number = 10;
+                break;
+            case "J":
+                this.number = 11;
+                break;
+            case "Q":
+                this.number = 12;
+                break;
+            case "K":
+                this.number = 13;
+                break;
+            case "A":
+                this.number = 14;
+                break;
+            default:
+                this.number = Integer.parseInt(number);
+                break;
         }
-        else if(max1.equals(max2)){
-            cardList1.remove(max1);
-            cardList2.remove(max2);
-            return compareCardsNumber(cardList1,cardList2);
+    }
+
+    public static final int HIGH_CARD = 1;
+    public static final int PAIR = 2;
+    public static final int TWO_PAIR = 3;
+    public static final int THREE_OF_A_KIND = 4;
+    public static final int STRAIGHT = 5;
+    public static final int FLUSH = 6;
+    public static final int FULL_HOUSE = 7;
+    public static final int FOUR_OF_A_KIND = 8;
+    public static final int STRAIGHT_FLUSH = 9;
+
+    public static String compareCards(List<Poker> player1, List<Poker> player2) {
+
+        player1 = player1.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
+        player2 = player2.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
+        Integer style1 = judgeStyle(player1);
+        Integer style2 = judgeStyle(player2);
+
+        if (style1>style2) return "player1 win";
+        if(style1<style2) return "player2 win";
+
+
+        return compareCardsNumber(player1, player2);
+    }
+
+    public static String compareCardsNumber(List<Poker> player1, List<Poker> player2) {
+        Integer max1 = player1.get(0).getNumber();
+        Integer max2 = player2.get(0).getNumber();
+
+        if (max1 > max2) {
+            return "player1 win";
+        } else if (max1.equals(max2)) {
+            if (player1.size() == 1 && player2.size() == 1) return "nobody win";
+            player1.remove(0);
+            player2.remove(0);
+            return compareCardsNumber(player1, player2);
         }
         return "player2 win";
+    }
+
+    public static Integer judgeStyle(List<Poker> player) {
+        int count = 0;
+        for (int i = 0; i < player.size() - 1; i++) {
+            if (player.get(i).getNumber() == player.get(i + 1).getNumber())
+                count++;
+        }
+        // 11112  12222
+        // 11122  11222
+        if (count == 3) {
+            if (player.get(1).getNumber() == player.get(3).getNumber())
+                return FOUR_OF_A_KIND;
+            else
+                return FULL_HOUSE;
+        }
+        // 11123 12223 12333
+        // 11223 12233 11233
+        if (count == 2) {
+            if ((player.get(0).getNumber() == player.get(2).getNumber()) ||
+                    (player.get(1).getNumber() == player.get(3).getNumber()) ||
+                    (player.get(2).getNumber() == player.get(4).getNumber()))
+                return THREE_OF_A_KIND;
+            else
+                return TWO_PAIR;
+        }
+        // 11234
+        if (count == 1)
+            return PAIR;
+        if (count == 0 &&
+                (player.get(1).getNumber() == player.get(0).getNumber() + 1) &&
+                (player.get(2).getNumber() == player.get(1).getNumber() + 1) &&
+                (player.get(3).getNumber() == player.get(2).getNumber() + 1) &&
+                (player.get(4).getNumber() == player.get(3).getNumber() + 1))
+            return STRAIGHT;
+        return HIGH_CARD;
     }
 }

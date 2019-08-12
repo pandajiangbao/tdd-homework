@@ -37,4 +37,15 @@ public class PokerTest {
 
         Assert.assertEquals("player2 win",result);
     }
+
+    @Test
+    public void testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card(){
+        List<Poker> player1 = Arrays.asList(new Poker("C","5"), new Poker("D","A"), new Poker("H","K"), new Poker("H","8"), new Poker("S","5"));
+        List<Poker> player2 = Arrays.asList(new Poker("C","A"), new Poker("D","5"), new Poker("C","K"), new Poker("H","Q"), new Poker("H","9"));
+
+
+        String result= Poker.compareCards(player1,player2);
+
+        Assert.assertEquals("player1 win",result);
+    }
 }
