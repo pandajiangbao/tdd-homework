@@ -18,14 +18,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47867805">
+    <splitter split-orientation="horizontal" split-proportion="0.42004263">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/poker/Poker.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="56" column="43" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="43" />
+                <state relative-caret-position="267">
+                  <caret line="50" column="43" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -40,8 +40,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+                <state relative-caret-position="484">
+                  <caret line="213" column="36" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -183,8 +183,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH">
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FLUSH" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
@@ -194,13 +194,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_poker_size_when_both_FLUSH" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
@@ -210,13 +210,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
@@ -226,13 +226,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
@@ -242,13 +242,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
@@ -258,7 +258,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="poker" />
       <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
-      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -266,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH" />
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" />
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" />
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FLUSH" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +286,7 @@
       <updated>1565328741601</updated>
       <workItem from="1565328744695" duration="14774000" />
       <workItem from="1565532020525" duration="8407000" />
-      <workItem from="1565570639448" duration="15832000" />
+      <workItem from="1565570639448" duration="19505000" />
     </task>
     <task id="LOCAL-00001" summary="finish testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card">
       <created>1565608495257</created>
@@ -337,43 +337,57 @@
       <option name="project" value="LOCAL" />
       <updated>1565610918268</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH">
+      <created>1565611070532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565611070533</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finish testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND">
+      <created>1565614635918</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565614635918</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR - 2019.08.12 at 19h 38m 36s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_THREE_OF_A_KIND - 2019.08.12 at 20h 36m 31s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_THREE_OF_A_KIND" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest - 2019.08.12 at 19h 38m 44s.xml">
-      <configuration name="PokerTest" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT - 2019.08.12 at 20h 39m 39s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 39m 59s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT - 2019.08.12 at 20h 40m 44s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 40m 54s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT - 2019.08.12 at 20h 40m 57s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 41m 55s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_FLUSH - 2019.08.12 at 20h 41m 32s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FLUSH" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 42m 28s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE - 2019.08.12 at 20h 44m 36s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 43m 27s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE - 2019.08.12 at 20h 45m 37s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT - 2019.08.12 at 19h 51m 54s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE - 2019.08.12 at 20h 50m 18s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FULL_HOUSE" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE - 2019.08.12 at 19h 52m 50s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND - 2019.08.12 at 20h 56m 01s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE - 2019.08.12 at 19h 54m 30s.xml">
-      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" configurationId="JUnit" />
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH - 2019.08.12 at 20h 58m 07s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39013000" />
+    <option name="totallyTimeSpent" value="42686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -453,7 +467,9 @@
     <MESSAGE value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_STRAIGHT" />
     <MESSAGE value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FLUSH_and_another_pokers_is_FULL_HOUSE" />
     <MESSAGE value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_FULL_HOUSE" />
+    <MESSAGE value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH" />
+    <MESSAGE value="finish testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/parking/Car.java" />
@@ -482,8 +498,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/poker/Poker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="43" />
+        <state relative-caret-position="267">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -492,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+        <state relative-caret-position="484">
+          <caret line="213" column="36" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

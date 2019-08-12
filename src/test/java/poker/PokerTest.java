@@ -204,13 +204,13 @@ public class PokerTest {
     }
 
     @Test
-    public void testPoker_given_two_pokers_then_compare_poker_size_when_both_FOUR_OF_A_KIND(){
-        List<Poker> player1 = Arrays.asList(new Poker("H","7"), new Poker("C","7"), new Poker("S","7"), new Poker("D","7"), new Poker("S","Q"));
-        List<Poker> player2 = Arrays.asList(new Poker("S","9"), new Poker("C","9"), new Poker("H","9"), new Poker("D","9"), new Poker("D","2"));
+    public void testPoker_given_two_pokers_then_compare_poker_size_when_both_STRAIGHT_FLUSH(){
+        List<Poker> player1 = Arrays.asList(new Poker("S","A"), new Poker("S","K"), new Poker("S","Q"), new Poker("S","J"), new Poker("S","T"));
+        List<Poker> player2 = Arrays.asList(new Poker("H","9"), new Poker("H","8"), new Poker("H","7"), new Poker("H","6"), new Poker("H","5"));
 
 
         String result= Poker.compareCards(player1,player2);
 
-        Assert.assertEquals("player2 win",result);
+        Assert.assertEquals("player1 win",result);
     }
 }
