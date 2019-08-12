@@ -114,4 +114,15 @@ public class PokerTest {
 
         Assert.assertEquals("player1 win",result);
     }
+
+    @Test
+    public void testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_FOUR_OF_A_KIND_and_another_pokers_is_STRAIGHT_FLUSH(){
+        List<Poker> player1 = Arrays.asList(new Poker("H","J"), new Poker("C","J"), new Poker("S","J"), new Poker("D","J"), new Poker("C","T"));
+        List<Poker> player2 = Arrays.asList(new Poker("C","2"), new Poker("C","3"), new Poker("C","4"), new Poker("C","5"), new Poker("C","6"));
+
+
+        String result= Poker.compareCards(player1,player2);
+
+        Assert.assertEquals("player2 win",result);
+    }
 }
