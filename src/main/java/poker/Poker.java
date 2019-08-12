@@ -1,7 +1,5 @@
 package poker;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,7 +7,7 @@ import java.util.stream.Collectors;
 public class Poker {
     private String type;
     private Integer number;
-    public Poker(String type, String number) {
+    Poker(String type, String number) {
         this.type = type;
         switch (number) {
             case "T":
@@ -32,20 +30,12 @@ public class Poker {
                 break;
         }
     }
-    public String getType() {
+    private String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public Integer getNumber() {
+    private Integer getNumber() {
         return number;
-    }
-
-    public void setNumber(Integer number) {
-        this.number = number;
     }
 
     @Override
@@ -56,17 +46,17 @@ public class Poker {
                 '}';
     }
 
-    public static final int HIGH_CARD = 1;
-    public static final int PAIR = 2;
-    public static final int TWO_PAIR = 3;
-    public static final int THREE_OF_A_KIND = 4;
-    public static final int STRAIGHT = 5;
-    public static final int FLUSH = 6;
-    public static final int FULL_HOUSE = 7;
-    public static final int FOUR_OF_A_KIND = 8;
-    public static final int STRAIGHT_FLUSH = 9;
+    private static final int HIGH_CARD = 1;
+    private static final int PAIR = 2;
+    private static final int TWO_PAIR = 3;
+    private static final int THREE_OF_A_KIND = 4;
+    private static final int STRAIGHT = 5;
+    private static final int FLUSH = 6;
+    private static final int FULL_HOUSE = 7;
+    private static final int FOUR_OF_A_KIND = 8;
+    private static final int STRAIGHT_FLUSH = 9;
 
-    public static String compareCards(List<Poker> player1, List<Poker> player2) {
+    static String compareCards(List<Poker> player1, List<Poker> player2) {
 
         player1 = player1.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
         player2 = player2.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
@@ -82,7 +72,7 @@ public class Poker {
         return compareCardsNumber(player1, player2,style1);
     }
 
-    public static String compareCardsNumber(List<Poker> player1, List<Poker> player2,Integer style) {
+    private static String compareCardsNumber(List<Poker> player1, List<Poker> player2, Integer style) {
         Integer max1 = player1.get(0).getNumber();
         Integer max2 = player2.get(0).getNumber();
 
