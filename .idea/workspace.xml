@@ -3,30 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="70dc73af-d063-46cf-8060-44a51e6e29b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/poker/Poker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poker/Poker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/poker/PokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poker/PokerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/CarDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/CarDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/InOrderParkingStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/ParkingBoy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/ParkingLot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/ParkingStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/Receipt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parking/VipParkingStrategy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/poker/Poker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poker/Poker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/EcmService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/Sales.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesActivityReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesReportDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesReportData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/InOrderParkingStrategyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/ParkingLotTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/VipParkingStrategyJMockitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/VipParkingStrategyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sales/SalesAppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/poker/PokerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/poker/PokerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,14 +19,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5191898">
+    <splitter split-orientation="horizontal" split-proportion="0.38752666">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/poker/Poker.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="37" />
+                <state relative-caret-position="78">
+                  <caret line="56" column="36" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -62,8 +41,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="545">
-                  <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+                <state relative-caret-position="418">
+                  <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -205,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card">
+  <component name="RunManager" selected="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT">
     <configuration name="PokerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -237,48 +216,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sales.*" />
+          <option name="PATTERN" value="poker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalesAppTest.should_return_filteredReportDataList_size_4_when_maxRow_5_and_filteredReportDataList_size_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="should_return_filteredReportDataList_size_4_when_maxRow_5_and_filteredReportDataList_size_4" />
+      <option name="PACKAGE_NAME" value="poker" />
+      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesAppTest.test_generateSalesActivityReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sales.*" />
+          <option name="PATTERN" value="poker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="test_generateSalesActivityReport" />
+      <option name="PACKAGE_NAME" value="poker" />
+      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poker" />
+      <option name="MAIN_CLASS_NAME" value="poker.PokerTest" />
+      <option name="METHOD_NAME" value="testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PokerTest.testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_STRAIGHT" />
         <item itemvalue="JUnit.PokerTest" />
-        <item itemvalue="JUnit.SalesAppTest.test_generateSalesActivityReport" />
-        <item itemvalue="JUnit.SalesAppTest" />
-        <item itemvalue="JUnit.SalesAppTest.should_return_filteredReportDataList_size_4_when_maxRow_5_and_filteredReportDataList_size_4" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" />
+        <item itemvalue="JUnit.PokerTest.testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card" />
       </list>
     </recent_temporary>
   </component>
@@ -306,23 +286,26 @@
       <updated>1565328741601</updated>
       <workItem from="1565328744695" duration="14774000" />
       <workItem from="1565532020525" duration="8407000" />
-      <workItem from="1565570639448" duration="13222000" />
+      <workItem from="1565570639448" duration="14772000" />
     </task>
+    <task id="LOCAL-00001" summary="finish testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card">
+      <created>1565608495257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565608495257</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair">
+      <created>1565609784024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565609784024</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SalesAppTest_should_return_filteredReportDataList_size_4_when_maxRow_5_and_filteredReportDataList_size_4 - 2019.08.12 at 00h 40m 10s.xml">
-      <configuration name="SalesAppTest.should_return_filteredReportDataList_size_4_when_maxRow_5_and_filteredReportDataList_size_4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest - 2019.08.12 at 00h 52m 30s.xml">
-      <configuration name="SalesAppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest - 2019.08.12 at 00h 52m 59s.xml">
-      <configuration name="SalesAppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_test_generateSalesActivityReport - 2019.08.12 at 00h 58m 10s.xml">
-      <configuration name="SalesAppTest.test_generateSalesActivityReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SalesAppTest_test_generateSalesActivityReport - 2019.08.12 at 00h 59m 20s.xml">
       <configuration name="SalesAppTest.test_generateSalesActivityReport" configurationId="JUnit" />
     </history-entry>
@@ -341,9 +324,21 @@
     <history-entry file="PokerTest - 2019.08.12 at 18h 52m 24s.xml">
       <configuration name="PokerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PokerTest_testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card - 2019.08.12 at 19h 14m 07s.xml">
+      <configuration name="PokerTest.testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair - 2019.08.12 at 19h 35m 57s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest_testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR - 2019.08.12 at 19h 38m 36s.xml">
+      <configuration name="PokerTest.testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_THREE_OF_A_KIND_and_another_pokers_is_TWO_PAIR" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerTest - 2019.08.12 at 19h 38m 44s.xml">
+      <configuration name="PokerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36403000" />
+    <option name="totallyTimeSpent" value="37953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -356,6 +351,7 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" weight="0.11247335" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Duplicates" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32606438" />
@@ -414,6 +410,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish testPoker_given_two_card_list_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_high_card" />
+    <MESSAGE value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish testPoker_given_two_pokers_then_compare_one_card_size_when_one_pokers_is_pair_and_another_pokers_is_two_pair" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/parking/Car.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/parking/ParkingBoy.java" />
@@ -441,8 +442,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/poker/Poker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="78">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -451,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/poker/PokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        <state relative-caret-position="418">
+          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
