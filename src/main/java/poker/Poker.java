@@ -67,14 +67,14 @@ public class Poker {
         Integer style1 = judgeStyle(player1);
         Integer style2 = judgeStyle(player2);
 
-        if (style1>style2) return "player1 win";
-        if(style1<style2) return "player2 win";
+        if (style1 > style2) return "player1 win";
+        if (style1 < style2) return "player2 win";
 
 
-        return compareCardsNumber(player1, player2);
+        return compareCardsNumber(player1, player2,style1);
     }
 
-    public static String compareCardsNumber(List<Poker> player1, List<Poker> player2) {
+    public static String compareCardsNumber(List<Poker> player1, List<Poker> player2,Integer style) {
         Integer max1 = player1.get(0).getNumber();
         Integer max2 = player2.get(0).getNumber();
 
@@ -84,7 +84,7 @@ public class Poker {
             if (player1.size() == 1 && player2.size() == 1) return "nobody win";
             player1.remove(0);
             player2.remove(0);
-            return compareCardsNumber(player1, player2);
+            return compareCardsNumber(player1, player2,HIGH_CARD);
         }
         return "player2 win";
     }
@@ -116,12 +116,21 @@ public class Poker {
         // 11234
         if (count == 1)
             return PAIR;
-        if (count == 0 &&
+
+        if (isStraight(player, count) && (player.stream().map(Poker::getType).distinct().count() == 1))
+            return STRAIGHT_FLUSH;
+        else if (isStraight(player, count))
+            return STRAIGHT;
+        else if (player.stream().map(Poker::getType).distinct().count() == 1)
+            return FLUSH;
+        return HIGH_CARD;
+    }
+
+    private static boolean isStraight(List<Poker> player, int count) {
+        return count == 0 &&
                 (player.get(1).getNumber() == player.get(0).getNumber() + 1) &&
                 (player.get(2).getNumber() == player.get(1).getNumber() + 1) &&
                 (player.get(3).getNumber() == player.get(2).getNumber() + 1) &&
-                (player.get(4).getNumber() == player.get(3).getNumber() + 1))
-            return STRAIGHT;
-        return HIGH_CARD;
+                (player.get(4).getNumber() == player.get(3).getNumber() + 1);
     }
 }
