@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 public class Poker {
     private String type;
     private Integer number;
+
     Poker(String type, String number) {
         this.type = type;
         switch (number) {
@@ -30,20 +31,13 @@ public class Poker {
                 break;
         }
     }
+
     private String getType() {
         return type;
     }
 
     private Integer getNumber() {
         return number;
-    }
-
-    @Override
-    public String toString() {
-        return "Poker{" +
-                "type='" + type + '\'' +
-                ", number=" + number +
-                '}';
     }
 
     private static final int HIGH_CARD = 1;
@@ -58,34 +52,54 @@ public class Poker {
 
     static String compareCards(List<Poker> player1, List<Poker> player2) {
 
-        player1 = player1.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
-        player2 = player2.stream().sorted(Comparator.comparing(Poker::getNumber).reversed()).collect(Collectors.toList());
+        player1 = player1.stream().sorted(Comparator.comparing(Poker::getNumber)).collect(Collectors.toList());
+        player2 = player2.stream().sorted(Comparator.comparing(Poker::getNumber)).collect(Collectors.toList());
+
         Integer style1 = judgeStyle(player1);
         Integer style2 = judgeStyle(player2);
-        player1.forEach(System.out::println);
-        player2.forEach(System.out::println);
-        System.out.println("style1 = " + style1);
-        System.out.println("style2 = " + style2);
+
         if (style1 > style2) return "player1 win";
         if (style1 < style2) return "player2 win";
 
 
-        return compareCardsNumber(player1, player2,style1);
+        return compareCardsNumber(player1, player2, style1);
     }
 
     private static String compareCardsNumber(List<Poker> player1, List<Poker> player2, Integer style) {
-        Integer max1 = player1.get(0).getNumber();
-        Integer max2 = player2.get(0).getNumber();
+
+        Integer max1 = player1.get(player1.size()-1).getNumber();
+        Integer max2 = player2.get(player2.size()-1).getNumber();
+
+        if (style == PAIR||style==TWO_PAIR||style==THREE_OF_A_KIND||style==FULL_HOUSE||style==FOUR_OF_A_KIND) {
+            max1 = getDuplicateMax(player1,style);
+            max2 = getDuplicateMax(player2,style);
+            System.out.println("max1 = " + max1);
+            System.out.println("max2 = " + max2);
+        }
 
         if (max1 > max2) {
             return "player1 win";
-        } else if (max1.equals(max2)) {
+        } else if (max1.equals(max2) && style == HIGH_CARD) {
             if (player1.size() == 1 && player2.size() == 1) return "nobody win";
-            player1.remove(0);
-            player2.remove(0);
-            return compareCardsNumber(player1, player2,HIGH_CARD);
+            player1.remove(player1.size()-1);
+            player2.remove(player2.size()-1);
+            return compareCardsNumber(player1, player2, HIGH_CARD);
         }
         return "player2 win";
+    }
+
+    private static Integer getDuplicateMax(List<Poker> player,Integer style) {
+        List<Integer> collect = player.stream()
+                .map(Poker::getNumber)
+                .collect(Collectors.toMap(e -> e, e -> 1, Integer::sum))
+                .entrySet().stream()
+                .filter(entry -> {
+                    if (style==FULL_HOUSE) return entry.getValue() == 3;
+                    else return entry.getValue() > 1;
+                })
+                .map(entry -> entry.getKey())
+                .collect(Collectors.toList());
+        return collect.get(collect.size()-1);
     }
 
     public static Integer judgeStyle(List<Poker> player) {
@@ -127,9 +141,9 @@ public class Poker {
 
     private static boolean isStraight(List<Poker> player, int count) {
         return count == 0 &&
-                (player.get(1).getNumber() == player.get(0).getNumber() - 1) &&
-                (player.get(2).getNumber() == player.get(1).getNumber() - 1) &&
-                (player.get(3).getNumber() == player.get(2).getNumber() - 1) &&
-                (player.get(4).getNumber() == player.get(3).getNumber() - 1);
+                (player.get(1).getNumber() == player.get(0).getNumber() + 1) &&
+                (player.get(2).getNumber() == player.get(1).getNumber() + 1) &&
+                (player.get(3).getNumber() == player.get(2).getNumber() + 1) &&
+                (player.get(4).getNumber() == player.get(3).getNumber() + 1);
     }
 }
